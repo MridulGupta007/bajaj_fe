@@ -18,7 +18,7 @@ function App() {
       const jsonData = JSON.parse(jsonInput);
 
       // Call the REST API
-      const response = await fetch('http://localhost:3000/bfhl', {
+      const response = await fetch('https://bajaj-be.onrender.com/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(jsonData)
